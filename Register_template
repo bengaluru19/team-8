@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+            <h1 style="text-align: center">Volunteer Registration</h1>
+            <div style="width: 30%; margin: 25px auto;">
+                    <form action="/" method="POST">
+                        <div class="form-group"> 
+                        <input class="form-control" type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="password" name="password" placeholder="Set Password(min length 5)"required pattern=".{5,}" >
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="number" name="number" placeholder="Enter Phone No" required>
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="text" name="org" placeholder="Enter Organization(Optional)">
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="text" name="location" placeholder="Enter Address" required>
+                        </div>
+                        <div class="checkbox"> 
+                        Interests: <br>
+                        <label><input class="checkbox" type="checkbox" name="teach" value="teach">Teaching</label>
+                        <label><input class="checkbox" type="checkbox" name="paint" value="paint">Painting</label>
+                        </div>
+                        Others (Please Specify)
+                        <div class="form-group"> 
+                        <input class="form-control" type="text" name="interests" placeholder="Other Interests">
+                        </div>
+                        <div class="form-group"> 
+                        <input class="form-control" type="number" name="age" placeholder="Enter Your Age" min="18" required>
+                        </div>
+                        <div class="form-group"> 
+                        <button class="btn btn-lg btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+                    <a href="/">Go Back</a>
+            </div>
+            
+    </div>
+       
+</div>
