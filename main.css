@@ -1,0 +1,61 @@
+.thumbnail img{
+    width: 100%
+}
+.thumbnail.caption-full {
+    padding: 9px ;
+}
+.thumbnail{
+    padding: 0;
+}
+
+#delete-form{
+    display: inline;
+}
+#plsinline{
+    display: inline;
+}
+#foot{
+    text-align: center;
+}
+.fontclass{
+    font-family: 'Spicy Rice', cursive;
+}.thumbnail img{
+    width: 100%
+}
+.thumbnail.caption-full {
+    padding: 9px ;
+}
+.thumbnail{
+    padding: 0;
+}
+
+#delete-form{
+    display: inline;
+}
+#plsinline{
+    display: inline;
+}
+#foot{
+    text-align: center;
+}
+.fontclass{
+    font-family: 'Spicy Rice', cursive;
+}
+#inputfield{
+    height:300px;
+    width: 100%;
+}
+#todos{
+    margin-left: 30%;
+    margin-top: 50px;
+}
+#todosnew{
+    margin-left: 30%;
+}
+#copy{
+    bottom:auto;
+    text-align: center;
+}
+.delete{
+    margin-left: 20px;
+}
