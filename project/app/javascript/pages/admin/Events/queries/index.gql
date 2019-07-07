@@ -1,0 +1,20 @@
+#import "fragments/EventEntry.gql"
+#import "fragments/OfficeEntry.gql"
+#import "fragments/UserEntry.gql"
+
+query EventsQuery($officeId: ID, $sortBy: EventSortEnum,) {
+  currentUser {
+    ...UserEntry
+    isAdmin
+  }
+  events(officeId: $officeId, sortBy: $sortBy) {
+    ...EventEntry
+    signupCount
+    office {
+      ...OfficeEntry
+    }
+    organization {
+      name
+    }
+  }
+}

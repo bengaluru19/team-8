@@ -1,0 +1,32 @@
+#import "fragments/EventEntry.gql"
+#import "fragments/EventTypeEntry.gql"
+#import "fragments/OfficeEntry.gql"
+#import "fragments/OrganizationEntry.gql"
+#import "fragments/UserEntry.gql"
+
+query EventQuery($id: ID!) {
+  event(id: $id) {
+    ...EventEntry
+    office {
+      ...OfficeEntry
+    }
+    eventType {
+      ...EventTypeEntry
+    }
+    organization {
+      ...OrganizationEntry
+    }
+    users {
+      ...UserEntry
+    }
+  }
+  eventTypes {
+    ...EventTypeEntry
+  }
+  offices(sortBy: NAME_ASC) {
+    ...OfficeEntry
+  }
+  organizations {
+    ...OrganizationEntry
+  }
+}

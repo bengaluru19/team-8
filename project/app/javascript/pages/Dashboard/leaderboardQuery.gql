@@ -1,0 +1,21 @@
+#import "fragments/UserEntry.gql"
+#import "fragments/OfficeEntry.gql"
+
+query LeaderboardQuery($count: Int, $sortBy: UserSortEnum, $officeId: ID, $after: Int, $before: Int) {
+  users(count: $count, sortBy: $sortBy, officeId: $officeId, after: $after, before: $before) {
+    ...UserEntry
+    hours(after: $after, before: $before)
+    office {
+      ...OfficeEntry
+    }
+  }
+  currentUser {
+    ...UserEntry
+    office {
+      ...OfficeEntry
+    }
+  }
+  offices(sortBy: NAME_ASC) {
+    ...OfficeEntry
+  }
+}

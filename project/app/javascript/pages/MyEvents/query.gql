@@ -1,0 +1,51 @@
+#import "fragments/UserEntry.gql"
+#import "fragments/OfficeEntry.gql"
+#import "fragments/OrganizationEntry.gql"
+
+query MyEventsQuery {
+  currentUser {
+    ...UserEntry
+    individualEvents {
+      id
+      status
+      duration
+      date
+      description
+      organization {
+        ...OrganizationEntry
+      }
+      eventType {
+        id
+        title
+      }
+      office {
+        ...OfficeEntry
+      }
+    }
+    signups {
+      event {
+        title
+        duration
+        startsAt
+        description
+        organization {
+          name
+        }
+        eventType {
+          title
+        }
+        location
+      }
+    }
+  }
+  offices(sortBy: NAME_ASC) {
+    ...OfficeEntry
+  }
+  eventTypes {
+    id
+    title
+  }
+  organizations {
+    ...OrganizationEntry
+  }
+}

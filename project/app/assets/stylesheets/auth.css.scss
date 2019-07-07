@@ -1,0 +1,71 @@
+.login {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  height: 75vh;
+}
+
+.branding {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.branding h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.signin-logo {
+  width: 50%;
+  color: #03363D;
+}
+
+.login-form {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.signin-btn {
+  height: 36px;
+  width: 225px;
+  font-size: 16px;;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: 15px 8px;
+  background-size: 20px;
+  padding-left: 50px;
+  padding-right: 15px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border: none;
+
+  &:hover {
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  &:active {
+    border: none;
+    background-color: #d9d9d9;
+  }
+
+  &.google {
+    background-image: image-url('google.svg');
+  }
+
+  &.okta {
+    background-image: image-url('okta.png');
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .login {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .signin-logo {
+    width: 200px;
+  }
+}

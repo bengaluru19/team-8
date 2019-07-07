@@ -1,0 +1,53 @@
+{
+  "name": "Volunteer Portal",
+  "description": "A calendar driven application to organize, sign up, and track volunteering hours.",
+  "repository": "https://github.com/qwer/volunteer_portal",
+  "keywords": ["volunteer", "qwer", "calendar", "rails", "react", "graphql"],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": [
+      "bundle exec rake db:migrate"
+    ]
+  },
+  "buildpacks": [
+    {"url": "heroku/nodejs"},
+    {"url": "heroku/ruby"}
+  ],
+  "success_url": "/portal",
+  "env": {
+    "GOOGLE_CLIENT_ID": {
+      "description": "Required for Google OAuth. See the README for details on how to find them",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Required for Google OAuth. See the README for details on how to find them",
+      "required": true
+    },
+    "HOST": {
+      "description": "The application domain. For standard heroku apps, it will look like https://[app-name].herokuapp.com",
+      "required": true
+    },
+    "ATTR_ENCRYPTION_KEY": {
+      "description": "An encryption key used to store user information",
+      "required": true
+    },
+    "OAUTH_DOMAIN": {
+      "description": "Restricts portal access to a specific email domain.  This can be a string or a comma separated list.",
+      "required": false
+    },
+    "ROLLBAR_URL": {
+      "description": "If defined, it will report application exceptions to this Rollbar instance",
+      "required": false
+    },
+    "ROLLBAR_CLIENT_ACCESS_TOKEN": {
+      "description": "If ROLLBAR_URL is defined, the access token is needed to authenticate to Rollbar",
+      "required": false
+    },
+    "ZENDESK_WIDGET_KEY": {
+      "description": "If defined, a Zendesk Web Widget will be embedded to help users via your Zendesk account. Your key can be found in the snippet url, which is displayed on the web widget admin setup page inside your Zendesk instance.",
+      "required": false
+    }
+  }
+}

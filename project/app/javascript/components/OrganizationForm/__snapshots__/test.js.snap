@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loads 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="inputGroup"
+  >
+    <div>
+      <label
+        className="label"
+      >
+        Name
+         
+        <span
+          className="errorMsg"
+        >
+          *
+        </span>
+      </label>
+      <div>
+        <input
+          className="field"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="inputGroup"
+  >
+    <div>
+      <label
+        className="label"
+      >
+        Description
+         
+        <span
+          className="errorMsg"
+        >
+          *
+        </span>
+      </label>
+      <div>
+        <textarea
+          className="textfield"
+          name="description"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          type="textarea"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="inputGroup"
+  >
+    <div>
+      <label
+        className="label"
+      >
+        Location
+         
+        <span
+          className="errorMsg"
+        >
+          *
+        </span>
+      </label>
+      <div>
+        <div
+          className="geosuggest"
+        >
+          <div
+            className="geosuggest__input-wrapper"
+          >
+            <input
+              autoComplete="off"
+              className="geosuggest__input field"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Search places"
+              style={Object {}}
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="geosuggest__suggests-wrapper"
+          >
+            <ul
+              className="geosuggest__suggests autocompleteList geosuggest__suggests--hidden"
+              style={Object {}}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="inputGroup"
+  >
+    <div>
+      <label
+        className="label"
+      >
+        Website
+         
+        <span
+          className="errorMsg"
+        >
+          *
+        </span>
+      </label>
+      <div>
+        <input
+          className="field"
+          name="website"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onDragStart={[Function]}
+          onDrop={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="inputGroup"
+  >
+    <button
+      className="btn primary"
+      disabled={undefined}
+      type="submit"
+    >
+      Save
+    </button>
+  </div>
+</form>
+`;

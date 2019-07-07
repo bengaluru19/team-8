@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-image: none;
+  background-color: #03363D;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  color: black;
+}
+
+.project-name, .project-name a {
+  color: white
+}
